@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="Author" content="Luca Signoli Maggiotto">
+    <meta name="Description" content="Web de formularios">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="col">
+    <div class="cent">
+        <div class="box">
+            <h2>Accede a tu Área Clientes</h2>
+            <form>
+            <p><strong>Elige tu Documento</strong></p>
+            <p><input type="radio" name="ident1" id="ident1"> DNI o Tarjeta de residencia</p>
+            <p><input type="radio" name="ident1" id="ident1"> Pasaporte</p>
+
+            <p class="p1">Número de Documento</p>
+            <input class="in1" type="text" placeholder="DNI o Tarjeta de residencia">
+            <p class="p1">Fecha de Nacimiento</p>
+            <input class="in2" placeholder="DD" type="text"><input class="in2" placeholder="MM" type="text"><input
+                class="in2" placeholder="AAAA" type="text">
+            <br>
+            <br>
+            <p><input type="checkbox"> Recordar</p>
+            <button class="b1">entrar</button>
+            <br>
+            <p><a class="a1" href="https://ing.ingdirect.es/pfm/#login/security-information">Más información de
+                    Seguridad</a></p>
+            <p><a class="a1" href="https://ing.ingdirect.es/pfm/#login/security-information">Acceder con DNI
+                    electrónico</a></p>
+                </form>
+        </div>
+    </div>
+    <hr>
+    <div class="cent">
+        <div>
+            <h2>Empieza creando tu usuario</h2>
+            <form>
+            <p><input class="in3" placeholder="Nombre (Como sale en el DNI)" type="text"></p>
+            <p><input class="in4" placeholder="1º apellido (como sale en el DNI)" type="text"> <input class="in4"
+                    placeholder="2º apellido (como sale en el DNI)" type="text"></p>
+            
+            <select name="Tipo De Documento" id="doc">
+                <option value="1">NIF</option>
+                <option value="2">DNI</option>
+                <option value="3">CERT.AET</option>
+            </select>
+            <input class="in4" placeholder="NÚMERO DE DOCUMENTO" type="text"></p>
+
+               <p> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/1200px-Flag_of_Spain.svg.png" alt="Bandera de España" class="flag">
+            <select name="Número" id="se2">
+                <option value="+34">+34</option>
+                <option value="+33">+33</option>
+            </select>
+       <input type="text" id="movil" name="movil" placeholder="Móvil">
+                
+                <input class="in6" placeholder="EMAIL" type="text">
+            </form>
+        </div>
+    </div>
+    <hr>
+    <h2 id="cent">¿Eres Nuevo?</h2>
+    <pre id="cent">Régistrate para guardar tu informacíon y
+hacer tus pedidos de forma fácil y rápida</pre>
+    <div class="cent" >
+        <div>
+            <form>
+            <p>Email</p>
+           <p><input class="in4" placeholder="Introduce tu Email" type="text"></p>
+           <br>
+           <p>Teléfono</p>
+           <p><input class="in4" placeholder="Tu Teléfono" type="text"></p>
+            <br>
+            <label for="Contraseña">Contraseña</label>
+            <p><input placeholder="Introduce tu Contraseña" type="password" name="passwd" id="passw">
+            <span class="toggle-password" onclick="togglePasswordVisibility('confirmarContrasena')">&#128065;</span></p>
+                <br>
+            <label for="confirmarContrasena">Confirma tu contraseña</label>
+            <p><input type="password" id="confirmar" name="confirmarContrasena" placeholder="Confirmar contraseña" required>
+            <span class="toggle-password" onclick="togglePasswordVisibility('confirmarContrasena')">&#128065;</span></p>
+            <pre><input type="checkbox" required> He leído y acepto <a href="">Politica de privacidad</a></pre>
+<pre><input type="checkbox"> Si, acepto recibir comunicaciones comerciales 
+     y ofertas personalizadas segn mi perfil.</pre>
+     <button class="b2">Crea tu Cuenta</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
